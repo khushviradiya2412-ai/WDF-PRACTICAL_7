@@ -1,0 +1,17 @@
+[
+  {"id":101,"name":"Aarav Sharma","email":"aarav.sharma@studenthub.edu","course":"B.Tech Computer Science","year":3,"country":"India","state":"Maharashtra","city":"Mumbai","cgpa":8.7,"interests":["Web Development","AI"]},
+  {"id":102,"name":"Ananya Iyer","email":"ananya.iyer@studenthub.edu","course":"B.Tech Information Technology","year":2,"country":"India","state":"Tamil Nadu","city":"Chennai","cgpa":9.1,"interests":["UI Design","Cloud"]},
+  {"id":103,"name":"Rohan Mehta","email":"rohan.mehta@studenthub.edu","course":"BCA","year":1,"country":"India","state":"Gujarat","city":"Ahmedabad","cgpa":8.3,"interests":["Python","Data Science"]},
+  {"id":104,"name":"Priya Nair","email":"priya.nair@studenthub.edu","course":"B.Tech Computer Science","year":4,"country":"India","state":"Kerala","city":"Kochi","cgpa":9.3,"interests":["Cybersecurity","Research"]},
+  {"id":105,"name":"Kabir Singh","email":"kabir.singh@studenthub.edu","course":"B.Tech Electronics","year":3,"country":"India","state":"Delhi","city":"New Delhi","cgpa":7.9,"interests":["IoT","Robotics"]},
+  {"id":106,"name":"Meera Patel","email":"meera.patel@studenthub.edu","course":"BBA","year":2,"country":"India","state":"Gujarat","city":"Surat","cgpa":8.6,"interests":["Marketing","Entrepreneurship"]},
+  {"id":107,"name":"Arjun Rao","email":"arjun.rao@studenthub.edu","course":"B.Tech Computer Science","year":2,"country":"India","state":"Karnataka","city":"Bengaluru","cgpa":8.9,"interests":["Android","Gaming"]},
+  {"id":108,"name":"Sana Khan","email":"sana.khan@studenthub.edu","course":"BCA","year":3,"country":"India","state":"Maharashtra","city":"Pune","cgpa":8.4,"interests":["Databases","Web Development"]},
+  {"id":109,"name":"Vikram Das","email":"vikram.das@studenthub.edu","course":"B.Tech Mechanical","year":4,"country":"India","state":"West Bengal","city":"Kolkata","cgpa":7.8,"interests":["CAD","Automotive"]},
+  {"id":110,"name":"Ishita Bose","email":"ishita.bose@studenthub.edu","course":"B.Tech Information Technology","year":1,"country":"India","state":"West Bengal","city":"Kolkata","cgpa":9.0,"interests":["JavaScript","Design"]},
+  {"id":111,"name":"Daniel Wilson","email":"daniel.wilson@studenthub.edu","course":"B.Sc Data Science","year":3,"country":"United States","state":"California","city":"San Jose","cgpa":8.5,"interests":["Analytics","Python"]},
+  {"id":112,"name":"Olivia Brown","email":"olivia.brown@studenthub.edu","course":"BBA","year":2,"country":"United States","state":"New York","city":"New York City","cgpa":8.8,"interests":["Finance","Public Speaking"]},
+  {"id":113,"name":"Liam Martin","email":"liam.martin@studenthub.edu","course":"B.Tech Computer Science","year":4,"country":"Canada","state":"Ontario","city":"Toronto","cgpa":8.2,"interests":["Cloud","DevOps"]},
+  {"id":114,"name":"Sophia Chen","email":"sophia.chen@studenthub.edu","course":"B.Sc Data Science","year":1,"country":"Canada","state":"British Columbia","city":"Vancouver","cgpa":9.2,"interests":["Machine Learning","Maths"]},
+  {"id":115,"name":"Ethan Clark","email":"ethan.clark@studenthub.edu","course":"B.Tech Electronics","year":3,"country":"Australia","state":"New South Wales","city":"Sydney","cgpa":8.0,"interests":["Embedded Systems","Music"]}
+]

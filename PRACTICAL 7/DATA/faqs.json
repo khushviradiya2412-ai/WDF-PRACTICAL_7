@@ -1,0 +1,17 @@
+[
+  {"id":1,"category":"Academics","question":"How do I view my course schedule?","answer":"Open the Dashboard and select My Courses. Each enrolled course shows its schedule and learning material."},
+  {"id":2,"category":"Events","question":"How do I register for an event?","answer":"Choose an event in the Events section and use the Register button. Your registration is saved for the current browser session."},
+  {"id":3,"category":"Account","question":"How can I update my profile?","answer":"Go to Profile from the navigation menu and edit your personal or academic information."},
+  {"id":4,"category":"Academics","question":"Where can I see my grades?","answer":"Your grades and CGPA are available on the Academic Performance dashboard."},
+  {"id":5,"category":"Support","question":"Who should I contact for portal issues?","answer":"Use the Contact page or write to support@studenthub.edu with a description of the issue."},
+  {"id":6,"category":"Events","question":"Can I cancel an event registration?","answer":"Yes. Open the event again and choose Cancel Registration before the event registration deadline."},
+  {"id":7,"category":"Account","question":"How do I reset my password?","answer":"Use the Forgot Password link on the sign-in page and follow the verification instructions."},
+  {"id":8,"category":"Academics","question":"How is attendance calculated?","answer":"Attendance is calculated from the sessions recorded by your course instructor during the semester."},
+  {"id":9,"category":"Support","question":"Is the Student Hub available on mobile?","answer":"Yes. The portal layout adapts to phones, tablets, and desktop screens."},
+  {"id":10,"category":"Events","question":"What happens if an event is full?","answer":"A full event cannot accept new registrations. You may contact the organizer to ask about a waiting list."},
+  {"id":11,"category":"Account","question":"Can I change my email address?","answer":"You can request an email change through the Profile page after confirming your account details."},
+  {"id":12,"category":"Academics","question":"Where are study resources stored?","answer":"Course materials and notes are listed inside the relevant course card on the Dashboard."},
+  {"id":13,"category":"Support","question":"Why does the explorer show cached data?","answer":"If the JSON files cannot be reached, the explorer displays the most recently saved local data so it remains useful offline."},
+  {"id":14,"category":"Events","question":"Can I suggest a campus event?","answer":"Yes. Send your proposal to the Cultural Council or submit it through the Contact page."},
+  {"id":15,"category":"Account","question":"How do I sign out?","answer":"Select Logout from the navigation bar. You will return to the sign-in page."}
+]

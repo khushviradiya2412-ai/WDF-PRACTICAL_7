@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character set and viewport for mobile support -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub Portal - Home</title>
+    <!-- Link to our shared CSS file -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/INTERACTIVE.CSS">
+</head>
+<body>
+
+    <!-- ==================== NAVIGATION BAR ====================
+         The top menu seen on every page.
+         .navbar = dark background container
+         .nav-container = centers the content
+         .navbar-brand = site name/logo on the left
+         .nav-menu = links on the right
+         .nav-item = individual link
+    ============================================================ -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Site name / logo -->
+            <span class="navbar-brand">&#127979; Student Hub</span>
+
+            <!-- Navigation links -->
+            <div class="nav-menu">
+                <a href="HOME.HTML" class="nav-item">Dashboard</a>
+                <a href="PAGES/DATA-EXPLORER.HTML" class="nav-item">JSON Explorer</a>
+                <a href="PAGES/ABOUT.HTML" class="nav-item">About</a>
+                <a href="PAGES/CONTACT.HTML" class="nav-item">Contact</a>
+                <a href="PAGES/login.php" class="nav-item">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ====================
+         Big welcome banner at the top of the page.
+         .hero = dark background, centered text
+         .btn = reusable button class
+         .btn-primary = blue filled button
+         .btn-secondary = white outlined button
+    ========================================================= -->
+    <section class="hero">
+        <h1>Student Hub Portal</h1>
+        <p>Your Learning and Academic Management Platform</p>
+        <div>
+            <a href="PAGES/login.php" class="btn btn-primary">Sign In</a>
+            <a href="#features" class="btn btn-secondary">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- ==================== STATS SECTION ====================
+         Show 3 numbers about the platform.
+         .stats-row = a flex row of stat boxes
+         .stat-box = individual box with number and label
+    ========================================================= -->
+    <div class="stats-row">
+        <div class="stat-box">
+            <h3>5000+</h3>
+            <p>Active Students</p>
+        </div>
+        <div class="stat-box">
+            <h3>200+</h3>
+            <p>Courses</p>
+        </div>
+        <div class="stat-box">
+            <h3>95%</h3>
+            <p>Success Rate</p>
+        </div>
+    </div>
+
+    <!-- ==================== FEATURES SECTION ====================
+         A grid of feature cards.
+         .section-title = large centered heading
+         .card-grid = wrapping row of cards
+         .card = individual feature box
+         .card-icon = the big emoji/icon
+    ============================================================= -->
+    <section id="features">
+        <h2 class="section-title">Platform Features</h2>
+
+        <!-- Card Grid: cards wrap to next row on small screens -->
+        <div class="card-grid">
+
+            <div class="card">
+                <div class="card-icon">&#128200;</div> <!-- chart emoji -->
+                <h3>Academic Analytics</h3>
+                <p>Track your grades and academic progress in real time.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#128197;</div> <!-- calendar emoji -->
+                <h3>Event Management</h3>
+                <p>See upcoming campus events, workshops, and seminars.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#128100;</div> <!-- person emoji -->
+                <h3>Profile Management</h3>
+                <p>Update your personal and academic information easily.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#128276;</div> <!-- bell emoji -->
+                <h3>Smart Notifications</h3>
+                <p>Get alerts for assignments, events, and announcements.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#128196;</div> <!-- document emoji -->
+                <h3>Resource Hub</h3>
+                <p>Access course materials, notes, and study resources.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#128222;</div> <!-- telephone emoji -->
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock technical and academic support.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CALL TO ACTION ====================
+         A section inviting users to register.
+         Simple centered text and button.
+    ========================================================= -->
+    <section style="text-align: center; padding: 50px 20px; background-color: #2c3e50; color: white; margin-top: 40px;">
+        <h2 style="font-size: 26px; margin-bottom: 10px;">Ready to Start Your Journey?</h2>
+        <a href="PAGES/register.php" class="btn btn-secondary">Create Your Account Today</a>
+    </section>
+
+    <!-- ==================== FOOTER ====================
+         Bottom section with links and contact info.
+         .footer-inner = row of columns
+         .footer-col = one column of info
+         .footer-bottom = copyright line
+    ===================================================== -->
+    <footer>
+        <div class="footer-inner">
+
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>Student Hub Portal - Empowering students with modern learning tools.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="PAGES/FAQ.HTML">FAQ</a></li>
+                    <li><a href="PAGES/CONTACT.HTML">Contact</a></li>
+                    <li><a href="PAGES/ABOUT.HTML">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>LinkedIn</p>
+            </div>
+
+        </div>
+
+        <!-- Copyright line at the very bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Student Hub Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="JS/SCRIPT.JS"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Advanced Student Hub Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/EVENT.CSS">
+    <link rel="stylesheet" href="../CSS/INTERACTIVE.CSS">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Student Hub</span>
+            </div>
+            <div class="nav-menu">
+                <a href="../INDEX.HTML" class="nav-item home-link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="../HOME.HTML" class="nav-item">
+                    <i class="fas fa-th"></i> Dashboard
+                </a>
+                <a href="EVENT.HTML" class="nav-item active">
+                    <i class="fas fa-calendar-alt"></i> Events
+                </a>
+                <a href="CONTACT.HTML" class="nav-item">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+                <a href="LOGIN.HTML" class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i> Login
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Events Container -->
+    <div class="events-container">
+        <!-- Header Section -->
+        <section class="events-header">
+            <h1>Upcoming Events</h1>
+            <p>Discover and register for exciting campus events, workshops, seminars, and activities</p>
+            <div class="filter-bar">
+                <input type="text" placeholder="Search events..." class="search-input">
+                <select class="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="workshop">Workshops</option>
+                    <option value="seminar">Seminars</option>
+                    <option value="sports">Sports</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="career">Career</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Events Grid -->
+        <section class="events-grid">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <div class="event-image">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="event-content">
+                    <span class="event-category workshop">Workshop</span>
+                    <h3>Web Development Workshop</h3>
+                    <div class="event-detail">
+                        <i class="fas fa-calendar"></i>
+                        <span>February 5, 2026</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-clock"></i>
+                        <span>10:00 AM - 3:00 PM</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Lab A, Building 1</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-user-tie"></i>
+                        <span>CSE Department</span>
+                    </div>
+                    <div class="event-capacity">
+                        <span class="capacity-text">Seats Available:</span>
+                        <span class="capacity-number">45/50</span>
+                    </div>
+                    <button class="btn-register">
+                        <i class="fas fa-check"></i> Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card">
+                <div class="event-image data-science">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="event-content">
+                    <span class="event-category seminar">Seminar</span>
+                    <h3>Data Science & AI Bootcamp</h3>
+                    <div class="event-detail">
+                        <i class="fas fa-calendar"></i>
+                        <span>February 18, 2026</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-clock"></i>
+                        <span>11:00 AM - 1:00 PM</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Main Auditorium</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-user-tie"></i>
+                        <span>AI Research Club</span>
+                    </div>
+                    <div class="event-capacity">
+                        <span class="capacity-text">Seats Available:</span>
+                        <span class="capacity-number">120/150</span>
+                    </div>
+                    <button class="btn-register">
+                        <i class="fas fa-check"></i> Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-card">
+                <div class="event-image competition">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="event-content">
+                    <span class="event-category academic">Competition</span>
+                    <h3>Annual Hackathon 2026</h3>
+                    <div class="event-detail">
+                        <i class="fas fa-calendar"></i>
+                        <span>March 2, 2026</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-clock"></i>
+                        <span>24 Hours Non-stop</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Innovation Center</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Coding Club</span>
+                    </div>
+                    <div class="event-capacity">
+                        <span class="capacity-text">Seats Available:</span>
+                        <span class="capacity-number">80/100</span>
+                    </div>
+                    <button class="btn-register">
+                        <i class="fas fa-check"></i> Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="event-card">
+                <div class="event-image career">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="event-content">
+                    <span class="event-category career">Career</span>
+                    <h3>Tech Career & Internship Fair</h3>
+                    <div class="event-detail">
+                        <i class="fas fa-calendar"></i>
+                        <span>March 15, 2026</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-clock"></i>
+                        <span>9:00 AM - 5:00 PM</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Campus Ground Hall</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Placement Cell</span>
+                    </div>
+                    <div class="event-capacity">
+                        <span class="capacity-text">Seats Available:</span>
+                        <span class="capacity-number">300/500</span>
+                    </div>
+                    <button class="btn-register">
+                        <i class="fas fa-check"></i> Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="event-card">
+                <div class="event-image cultural">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="event-content">
+                    <span class="event-category cultural">Cultural</span>
+                    <h3>Annual Campus Cultural Fest</h3>
+                    <div class="event-detail">
+                        <i class="fas fa-calendar"></i>
+                        <span>April 10, 2026</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-clock"></i>
+                        <span>5:00 PM Onwards</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Open Air Theatre</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Cultural Committee</span>
+                    </div>
+                    <div class="event-capacity">
+                        <span class="capacity-text">Seats Available:</span>
+                        <span class="capacity-number">Open Access</span>
+                    </div>
+                    <button class="btn-register">
+                        <i class="fas fa-check"></i> Register Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Event 6 -->
+            <div class="event-card">
+                <div class="event-image sports">
+                    <i class="fas fa-futbol"></i>
+                </div>
+                <div class="event-content">
+                    <span class="event-category sports">Sports</span>
+                    <h3>Inter-College Football Tournament</h3>
+                    <div class="event-detail">
+                        <i class="fas fa-calendar"></i>
+                        <span>April 22, 2026</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-clock"></i>
+                        <span>8:00 AM - 4:00 PM</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>University Sports Complex</span>
+                    </div>
+                    <div class="event-detail">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Sports Department</span>
+                    </div>
+                    <div class="event-capacity">
+                        <span class="capacity-text">Seats Available:</span>
+                        <span class="capacity-number">16 Teams</span>
+                    </div>
+                    <button class="btn-register">
+                        <i class="fas fa-check"></i> Register Now
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Advanced Student Hub Portal - Empowering students with modern learning tools and academic excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a class="home-link" href="../INDEX.HTML">Home</a></li>
+                    <li><a href="ABOUT.HTML">About</a></li>
+                    <li><a href="CONTACT.HTML">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: events@studenthub.edu</p>
+                <p>Phone: +91-XXX-XXX-XXXX</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/SCRIPT.JS"></script>
+</body>
+</html>

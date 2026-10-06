@@ -1,0 +1,47 @@
+[
+    {
+        "timestamp": "2026-10-05 10:00:00",
+        "fullname": "Demo Student",
+        "email": "demo@studenthub.edu",
+        "phone": "9876543210",
+        "studentid": "25DCE001",
+        "course": "Computer Engineering",
+        "year": "2025"
+    },
+    {
+        "timestamp": "2026-10-06 13:39:15",
+        "fullname": "Khush Viradiya",
+        "email": "khushviradiya2412@gmail.com",
+        "phone": "8799319926",
+        "dob": "2006-12-24",
+        "gender": "male",
+        "studentid": "25DCE123",
+        "course": "Computer Engineering",
+        "year": "2025",
+        "password_hash": "$2y$10$2eCi0ksC.wq1J7ZcsKHx4OWvcHQltA.U9Xirru1Xu2tTq9XBAkL16"
+    },
+    {
+        "timestamp": "2026-10-06 13:40:59",
+        "fullname": "Aksh Virja",
+        "email": "akshvirja1927@gmail.com",
+        "phone": "9876543210",
+        "dob": "2008-12-22",
+        "gender": "male",
+        "studentid": "25DCE124",
+        "course": "Computer Engineering",
+        "year": "2025",
+        "password_hash": "$2y$10$UsDq7pOZRG0TGDDaPiXnzeEoCoMuieTfkj.XQG1IfTdyeVAGScZHS"
+    },
+    {
+        "timestamp": "2026-10-06 13:51:27",
+        "fullname": "Khush Viradiya",
+        "email": "khushviradiya24@gmail.com",
+        "phone": "9925613849",
+        "dob": "2006-02-23",
+        "gender": "male",
+        "studentid": "25DCE125",
+        "course": "Information Technology",
+        "year": "2025",
+        "password_hash": "$2y$10$NJP20gPvoA\/aXjC4FoepUOPNCM5Th\/6hS60X2e.cA\/7r.zdVCbl9e"
+    }
+]

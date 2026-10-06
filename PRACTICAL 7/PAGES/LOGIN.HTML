@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Login</title>
+    <!-- Link to shared CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/INTERACTIVE.CSS">
+</head>
+<body>
+
+    <!-- ==================== LOGIN PAGE ====================
+         This page uses .auth-wrapper to vertically center
+         the login box on screen.
+         .auth-box = white box with the form inside
+    ======================================================== -->
+
+    <div class="auth-wrapper">
+        <div class="auth-box">
+
+            <!-- Header of the login box -->
+            <h2>&#127979; Student Hub</h2>
+            <p>Secure Login Portal</p>
+
+            <!-- LOGIN FORM
+                 Static demo: goes to YOUR dashboard (JS/auth.js fills it).
+                 On XAMPP use login.php (verifies password + session). -->
+            <form action="DASHBOARD.HTML" method="GET">
+
+                <!-- Username input -->
+                <div class="form-group">
+                    <label for="username">Student ID / Email</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your student ID or email"
+                        required
+                    >
+                </div>
+
+                <!-- Password input -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+
+                <!-- Remember Me and Forgot Password -->
+                <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 12px;">
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                    <a href="#" style="color: #3498db; text-decoration: none;">Forgot Password?</a>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+
+            </form>
+
+            <!-- Footer links below the form -->
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="REGISTER.HTML">Create one here</a></p>
+                <p>On XAMPP: <a href="register.php">Register (PHP)</a> &rarr; <a href="dashboard.php">My Dashboard</a> &rarr; <a href="login.php">Login (PHP)</a></p>
+                <p><a class="home-link" href="../INDEX.HTML"><span aria-hidden="true">⌂</span> Home</a></p>
+            </div>
+
+            <!-- Security note -->
+            <p style="text-align: center; font-size: 12px; color: #999; margin-top: 14px;">
+                &#128274; Your data is secure and encrypted
+            </p>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Student Hub Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/auth.js"></script>
+    <script src="../JS/SCRIPT.JS"></script>
+</body>
+</html>

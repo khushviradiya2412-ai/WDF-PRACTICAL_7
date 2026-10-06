@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessible student registration form with client-side validation">
+    <title>Student Registration - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/REGISTER.CSS">
+    <link rel="stylesheet" href="../CSS/INTERACTIVE.CSS">
+</head>
+<body class="registration-page">
+    <main class="auth-wrapper">
+        <section class="auth-box registration-box" aria-labelledby="registration-title">
+            <h1 id="registration-title">Create Student Account</h1>
+            <p>Join the Student Hub Portal</p>
+            <div class="form-summary" id="formSummary" role="alert" aria-live="polite" hidden></div>
+            <!-- Static demo: JS validates, saves to localStorage and goes to YOUR dashboard.
+                 On XAMPP use register.php instead (POST + server validation + redirect to dashboard.php). -->
+            <form id="registrationForm" action="DASHBOARD.HTML" method="get" novalidate>
+                <fieldset><legend>Personal Information</legend>
+                    <div class="form-group"><label for="fullname">Full Name <span aria-hidden="true">*</span></label><input type="text" id="fullname" name="fullname" autocomplete="name" placeholder="e.g. Khush Viradiya" required minlength="2" maxlength="60"><small class="field-hint">Letters, spaces, apostrophes and hyphens only.</small><p class="field-error" id="fullnameError" aria-live="polite"></p></div>
+                    <div class="form-group"><label for="email">Email Address <span aria-hidden="true">*</span></label><input type="email" id="email" name="email" autocomplete="email" placeholder="student@example.com" required><p class="field-error" id="emailError" aria-live="polite"></p></div>
+                    <div class="form-group"><label for="phone">Mobile Number <span aria-hidden="true">*</span></label><input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="1234567890" required><p class="field-error" id="phoneError" aria-live="polite"></p></div>
+                    <div class="form-row"><div class="form-group"><label for="dob">Date of Birth <span aria-hidden="true">*</span></label><input type="date" id="dob" name="dob" autocomplete="bday" value="2006-12-24" required><p class="field-error" id="dobError" aria-live="polite"></p></div><div class="form-group"><label for="gender">Gender <span aria-hidden="true">*</span></label><select id="gender" name="gender" required><option value="">Select gender</option><option value="female">Female</option><option value="male">Male</option><option value="non-binary">Non-binary</option><option value="prefer-not-to-say">Prefer not to say</option></select><p class="field-error" id="genderError" aria-live="polite"></p></div></div>
+                </fieldset>
+                <fieldset><legend>Academic Information</legend>
+                    <div class="form-group"><label for="studentid">Student ID / Roll No <span aria-hidden="true">*</span></label><input type="text" id="studentid" name="studentid" placeholder="e.g. 25DCE123" required pattern="[A-Za-z0-9-]{4,20}"><p class="field-error" id="studentidError" aria-live="polite"></p></div>
+                    <div class="form-row"><div class="form-group"><label for="course">Course / Branch <span aria-hidden="true">*</span></label><select id="course" name="course" required><option value="">Select course</option><option>Computer Engineering</option><option>Information Technology</option><option>Electronics Engineering</option><option>Mechanical Engineering</option><option>Civil Engineering</option></select><p class="field-error" id="courseError" aria-live="polite"></p></div><div class="form-group"><label for="year">Enrollment Year <span aria-hidden="true">*</span></label><input type="number" id="year" name="year" min="2000" max="2099" inputmode="numeric" placeholder="2025" required><p class="field-error" id="yearError" aria-live="polite"></p></div></div>
+                </fieldset>
+                <fieldset><legend>Secure Your Account</legend>
+                    <div class="form-group"><label for="password">Password <span aria-hidden="true">*</span></label><div class="password-input"><input type="password" id="password" name="password" autocomplete="new-password" placeholder="At least 8 characters" required minlength="8" aria-describedby="passwordHint strengthText"><button type="button" class="toggle-password" data-target="password" aria-label="Show password">Show</button></div><small id="passwordHint" class="field-hint">Use uppercase, lowercase, a number and a special character.</small><div class="strength-meter" aria-hidden="true"><span id="strengthBar"></span></div><small id="strengthText" class="strength-text" aria-live="polite">Password strength: not entered</small><p class="field-error" id="passwordError" aria-live="polite"></p></div>
+                    <div class="form-group"><label for="confirmPassword">Confirm Password <span aria-hidden="true">*</span></label><input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" placeholder="Re-enter your password" required><p class="field-error" id="confirmPasswordError" aria-live="polite"></p></div>
+                </fieldset>
+                <fieldset><legend>Human Verification and Agreement</legend>
+                    <div class="captcha-panel"><canvas id="captchaCanvas" width="220" height="65" aria-label="Visual CAPTCHA"></canvas><button type="button" id="refreshCaptcha" class="captcha-refresh" aria-label="Generate a new CAPTCHA">↻ New code</button><label for="captchaInput">Enter the code shown above <span aria-hidden="true">*</span></label><input type="text" id="captchaInput" name="captcha" autocomplete="off" inputmode="text" required maxlength="6" spellcheck="false"><p class="field-error" id="captchaInputError" aria-live="polite"></p></div>
+                    <div class="checkbox-group"><input type="checkbox" id="terms" name="terms" required><label for="terms">I agree to the <a href="#terms">Terms of Service</a> and Privacy Policy. <span aria-hidden="true">*</span></label></div><p class="field-error" id="termsError" aria-live="polite"></p>
+                    <div class="checkbox-group"><input type="checkbox" id="notifications" name="notifications"><label for="notifications">Send me updates about courses and events</label></div>
+                </fieldset>
+                <button type="submit" class="btn btn-primary submit-button">✓ Create Account</button>
+            </form>
+            <div class="auth-footer"><p>Already have an account? <a href="LOGIN.HTML">Sign in here</a></p><p>On XAMPP use the PHP flow: <a href="register.php">register.php</a> &rarr; <a href="dashboard.php">dashboard.php</a></p><p><a class="home-link" href="../INDEX.HTML"><span aria-hidden="true">⌂</span> Home</a></p></div>
+        </section>
+    </main>
+    <footer><div class="footer-bottom"><p>&copy; 2026 Student Hub Portal. All Rights Reserved.</p></div></footer>
+    <script src="../JS/auth.js"></script>
+    <script src="../JS/SCRIPT.JS"></script>
+</body>
+</html>

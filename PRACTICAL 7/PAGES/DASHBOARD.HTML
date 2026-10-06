@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Student Hub - Analytics Dashboard</title>
+    <link rel="stylesheet" href="../CSS/DASHBOARD.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/INTERACTIVE.CSS">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Advanced Student Hub</span>
+            </div>
+            <div class="nav-menu">
+                <a href="../HOME.HTML" class="nav-item">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-chart-line"></i> Analytics
+                </a>
+                <a href="PROFILE.HTML" class="nav-item">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+                <a href="EVENT.HTML" class="nav-item">
+                    <i class="fas fa-calendar"></i> Events
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <!-- Header -->
+        <div class="dashboard-header">
+            <div class="header-content">
+                <h1 data-welcome>Academic Analytics Dashboard</h1>
+                <p>Track your academic performance and progress</p>
+                <p style="font-size:13px;opacity:.8">On XAMPP the PHP version is <a href="dashboard.php">dashboard.php</a> (per-user, session based).</p>
+            </div>
+            <div class="header-actions">
+                <button class="action-btn"><i class="fas fa-download"></i> Download Report</button>
+                <button class="action-btn"><i class="fas fa-print"></i> Print</button>
+            </div>
+        </div>
+
+        <!-- Student Info Card : filled with the REGISTERED user's own data via JS/auth.js -->
+        <div class="student-card">
+            <div class="student-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="student-info">
+                <h2 data-user="fullname">Your Name</h2>
+                <p><strong>Roll No:</strong> <span data-user="studentid">—</span></p>
+                <p><strong>Branch:</strong> <span data-user="course">Your Branch</span></p>
+                <p><strong>Enrolled:</strong> <span data-user="year">—</span></p>
+                <p><strong>Email:</strong> <span data-user="email">you@example.com</span></p>
+                <p><strong>Phone:</strong> <span data-user="phone">—</span></p>
+            </div>
+            <div class="student-stats">
+                <div class="stat">
+                    <span class="stat-value">8.20</span>
+                    <span class="stat-label">Current CGPA</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">92%</span>
+                    <span class="stat-label">Attendance</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">24</span>
+                    <span class="stat-label">Credits Earned</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metrics Grid -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-icon courses">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="metric-content">
+                    <h3>Enrolled Courses</h3>
+                    <p class="metric-value">6</p>
+                    <p class="metric-detail">All active this semester</p>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon assignments">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="metric-content">
+                    <h3>Assignments Completed</h3>
+                    <p class="metric-value">18/20</p>
+                    <p class="metric-detail">90% submission rate</p>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon attendance">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="metric-content">
+                    <h3>Total Attendance</h3>
+                    <p class="metric-value">92%</p>
+                    <p class="metric-detail">138 of 150 lectures attended</p>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon grades">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="metric-content">
+                    <h3>Academic Standing</h3>
+                    <p class="metric-value">First Class</p>
+                    <p class="metric-detail">Distinction tier</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Table Section -->
+        <div class="section">
+            <h2>Current Semester Course Progress</h2>
+            <div class="table-container">
+                <table class="performance-table">
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Credits</th>
+                            <th>Attendance</th>
+                            <th>Internal Marks</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CE301</td>
+                            <td>Data Structures & Algorithms</td>
+                            <td>4</td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%;"></div>
+                                </div>
+                            </td>
+                            <td>28/30</td>
+                            <td><strong>A+</strong></td>
+                            <td><span class="badge success">On Track</span></td>
+                        </tr>
+                        <tr>
+                            <td>CE302</td>
+                            <td>Database Management Systems</td>
+                            <td>4</td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </td>
+                            <td>26/30</td>
+                            <td><strong>A</strong></td>
+                            <td><span class="badge success">On Track</span></td>
+                        </tr>
+                        <tr>
+                            <td>CE303</td>
+                            <td>Computer Networks</td>
+                            <td>3</td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 88%;"></div>
+                                </div>
+                            </td>
+                            <td>25/30</td>
+                            <td><strong>A</strong></td>
+                            <td><span class="badge success">On Track</span></td>
+                        </tr>
+                        <tr>
+                            <td>CE304</td>
+                            <td>Web Development Frameworks</td>
+                            <td>4</td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 96%;"></div>
+                                </div>
+                            </td>
+                            <td>29/30</td>
+                            <td><strong>A+</strong></td>
+                            <td><span class="badge success">On Track</span></td>
+                        </tr>
+                        <tr>
+                            <td>CE305</td>
+                            <td>Discrete Mathematics</td>
+                            <td>3</td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 82%;"></div>
+                                </div>
+                            </td>
+                            <td>22/30</td>
+                            <td><strong>B+</strong></td>
+                            <td><span class="badge warning">Needs Attention</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Tasks Section -->
+        <div class="section">
+            <h2>Pending Academic Tasks</h2>
+            <div class="tasks-list">
+                <div class="task-item">
+                    <div class="task-indicator high"></div>
+                    <div class="task-content">
+                        <h4>Data Structures - Assignment 3</h4>
+                        <p>Binary Search Trees Implementation • Due: Tomorrow at 11:59 PM</p>
+                    </div>
+                    <button class="task-btn">Submit Now</button>
+                </div>
+
+                <div class="task-item">
+                    <div class="task-indicator medium"></div>
+                    <div class="task-content">
+                        <h4>Database Project Submission</h4>
+                        <p>ER-Diagram and SQL Schema • Due: In 4 days</p>
+                    </div>
+                    <button class="task-btn">View Details</button>
+                </div>
+
+                <div class="task-item">
+                    <div class="task-indicator low"></div>
+                    <div class="task-content">
+                        <h4>Web Dev Practical 3</h4>
+                        <p>Responsive CSS and Portal Design • Completed</p>
+                    </div>
+                    <button class="task-btn" style="background: var(--success-color);">Completed</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <a href="PROFILE.HTML" class="link-btn">
+                <i class="fas fa-user-circle"></i> My Profile
+            </a>
+            <a href="EVENT.HTML" class="link-btn">
+                <i class="fas fa-calendar-alt"></i> Events
+            </a>
+            <a href="CONTACT.HTML" class="link-btn">
+                <i class="fas fa-envelope"></i> Contact Support
+            </a>
+            <a href="../HOME.HTML" class="link-btn home-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Advanced Student Hub Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../JS/auth.js"></script>
+    <script src="../JS/SCRIPT.JS"></script>
+</body>
+</html>

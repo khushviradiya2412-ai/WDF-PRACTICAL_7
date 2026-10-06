@@ -1,0 +1,42 @@
+/* Practical 7 additions — success/error summaries (reuses REGISTER.CSS look). */
+.form-summary {
+    background: #fff4e5;
+    border: 1px solid #f0ad4e;
+    color: #7a4b00;
+    border-radius: 5px;
+    padding: 10px 12px;
+    margin: 15px 0;
+    font-size: 14px;
+}
+.form-summary.success {
+    background: #eaf8ef;
+    border-color: #27ae60;
+    color: #155724;
+}
+.form-summary a { color: inherit; font-weight: 700; }
+.field-error {
+    min-height: 18px;
+    margin: 3px 0 0;
+    color: #b42318;
+    font-size: 13px;
+    font-weight: 600;
+}
+/* Full-field red/green validation (same as REGISTER.CSS, for PHP pages) */
+.form-group input.is-invalid,
+.form-group select.is-invalid,
+.form-group input[aria-invalid="true"],
+.form-group select[aria-invalid="true"] {
+    border: 1.5px solid #e74c3c !important;
+    background: #fdecef !important;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.08);
+}
+.form-group input.is-valid,
+.form-group select.is-valid,
+.form-group input[aria-invalid="false"],
+.form-group select[aria-invalid="false"] {
+    border: 1.5px solid #27ae60 !important;
+    background: #eafaf1 !important;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.08);
+}
+.section-box h2 { color: #2c3e50; margin-bottom: 12px; }
+code { background: #eef2f7; padding: 2px 6px; border-radius: 4px; font-size: 13px; }

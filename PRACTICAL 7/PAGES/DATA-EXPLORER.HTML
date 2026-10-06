@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Hub JSON data explorer with fetch, search, filter, sorting and pagination.">
+    <title>JSON Data Explorer | Student Hub</title>
+    <link rel="stylesheet" href="../CSS/DATA-EXPLORER.CSS">
+</head>
+<body class="data-explorer-page">
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a class="navbar-brand" href="../INDEX.HTML">🎓 Student Hub</a>
+            <div class="nav-menu">
+                <a class="nav-item" href="../HOME.HTML">Dashboard</a>
+                <a class="nav-item" href="EVENT.HTML">Events</a>
+                <a class="nav-item active" href="DATA-EXPLORER.HTML" aria-current="page">JSON Explorer</a>
+                <a class="nav-item" href="FAQ.HTML">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="explorer-hero">
+        <div class="explorer-hero__inner">
+            <p class="eyebrow">Practical 6</p>
+            <h1>Rendering External JSON Data</h1>
+            <p>Explore events, student profiles, and frequently asked questions loaded dynamically with the Fetch API.</p>
+        </div>
+    </header>
+
+    <main class="explorer-shell">
+        <section class="implementation-note" aria-label="Implementation summary">
+            <span class="implementation-note__icon" aria-hidden="true">{ }</span>
+            <div><strong>Live data explorer</strong><br>Search, filter, sort, paginate, and switch datasets. The last successful JSON response is cached locally for an offline-like display.</div>
+        </section>
+        <div id="statusRegion" aria-live="polite"></div>
+        <section id="dataExplorer" aria-label="JSON data explorer"></section>
+    </main>
+
+    <script type="module" src="../JS/data-explorer.js"></script>
+</body>
+</html>

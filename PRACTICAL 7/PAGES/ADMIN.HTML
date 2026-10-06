@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Advanced Student Hub Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/ADMIN.CSS">
+    <link rel="stylesheet" href="../CSS/INTERACTIVE.CSS">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <i class="fas fa-shield-alt"></i>
+                <span>Admin Panel</span>
+            </div>
+            <div class="nav-menu">
+                <a href="../HOME.HTML" class="nav-item">
+                    <i class="fas fa-th"></i> Dashboard
+                </a>
+                <a href="ADMIN.HTML" class="nav-item active">
+                    <i class="fas fa-cog"></i> Admin
+                </a>
+                <a href="CONTACT.HTML" class="nav-item">
+                    <i class="fas fa-envelope"></i> Support
+                </a>
+                <a href="LOGIN.HTML" class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Container -->
+    <div class="admin-container">
+        <!-- Header -->
+        <section class="admin-header">
+            <h1>Administration Panel</h1>
+            <p>Manage institutional data and user accounts</p>
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <span class="stat-number">2,345</span>
+                        <span class="stat-label">Total Students</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chalkboard-user"></i>
+                    <div>
+                        <span class="stat-number">156</span>
+                        <span class="stat-label">Faculty Members</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-book"></i>
+                    <div>
+                        <span class="stat-number">48</span>
+                        <span class="stat-label">Active Courses</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Upcoming Events</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Tabs -->
+        <section class="admin-tabs">
+            <button class="tab-button active" onclick="switchTab('students')">
+                <i class="fas fa-users"></i> Student Management
+            </button>
+            <button class="tab-button" onclick="switchTab('faculty')">
+                <i class="fas fa-chalkboard-user"></i> Faculty Management
+            </button>
+            <button class="tab-button" onclick="switchTab('events')">
+                <i class="fas fa-calendar-alt"></i> Event Management
+            </button>
+        </section>
+
+        <!-- Tab Content -->
+        <section class="tab-content">
+            <!-- Student Management Panel -->
+            <div class="tab-panel active" id="students">
+                <h2>Enrolled Students</h2>
+                <div class="table-controls">
+                    <input type="text" placeholder="Search student by name or ID..." class="search-box">
+                    <button class="btn-action btn-primary"><i class="fas fa-plus"></i> Add New Student</button>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Roll No</th>
+                                <th>Full Name</th>
+                                <th>Branch</th>
+                                <th>Semester</th>
+                                <th>CGPA</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>25DCE123</td>
+                                <td>Khush Viradiya</td>
+                                <td>Computer Engineering</td>
+                                <td>3rd</td>
+                                <td>8.20</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <button class="btn-small"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-small danger"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>25DCE124</td>
+                                <td>Bhargav Zalariya</td>
+                                <td>Computer Engineering</td>
+                                <td>3rd</td>
+                                <td>8.50</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <button class="btn-small"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-small danger"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>25DIT105</td>
+                                <td>Aarav Patel</td>
+                                <td>Information Technology</td>
+                                <td>3rd</td>
+                                <td>7.80</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <button class="btn-small"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-small danger"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Faculty Management Panel -->
+            <div class="tab-panel" id="faculty">
+                <h2>Faculty Members</h2>
+                <div class="table-controls">
+                    <input type="text" placeholder="Search faculty..." class="search-box">
+                    <button class="btn-action btn-primary"><i class="fas fa-plus"></i> Add Faculty</button>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Faculty ID</th>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>Designation</th>
+                                <th>Courses</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FAC001</td>
+                                <td>Dr. Rajesh Sharma</td>
+                                <td>Computer Engineering</td>
+                                <td>Professor & HOD</td>
+                                <td>Data Structures</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <button class="btn-small"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-small danger"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FAC002</td>
+                                <td>Prof. Priya Desai</td>
+                                <td>Information Technology</td>
+                                <td>Associate Professor</td>
+                                <td>Web Frameworks</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <button class="btn-small"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-small danger"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Event Management Panel -->
+            <div class="tab-panel" id="events">
+                <h2>Campus Events</h2>
+                <div class="table-controls">
+                    <input type="text" placeholder="Search events..." class="search-box">
+                    <button class="btn-action btn-primary"><i class="fas fa-plus"></i> Add Event</button>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Event ID</th>
+                                <th>Event Name</th>
+                                <th>Date</th>
+                                <th>Organizer</th>
+                                <th>Capacity</th>
+                                <th>Registrations</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>EV001</td>
+                                <td>Web Dev Workshop</td>
+                                <td>2026-02-05</td>
+                                <td>CSE Dept</td>
+                                <td>50</td>
+                                <td>45</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <button class="btn-small"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-small danger"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EV002</td>
+                                <td>Career Fair 2026</td>
+                                <td>2026-03-10</td>
+                                <td>TPO</td>
+                                <td>200</td>
+                                <td>156</td>
+                                <td><span class="badge success">Active</span></td>
+                                <td>
+                                    <button class="btn-small"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-small danger"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EV003</td>
+                                <td>Sports Day</td>
+                                <td>2026-04-15</td>
+                                <td>Sports Committee</td>
+                                <td>300</td>
+                                <td>245</td>
+                                <td><span class="badge warning">Pending</span></td>
+                                <td>
+                                    <button class="btn-small"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-small danger"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Advanced Student Hub Portal - Admin Panel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../JS/SCRIPT.JS"></script>
+</body>
+</html>

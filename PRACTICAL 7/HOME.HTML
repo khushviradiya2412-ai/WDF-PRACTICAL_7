@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Dashboard Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/INTERACTIVE.CSS">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="navbar-brand">&#127979; Student Hub</span>
+            <div class="nav-menu">
+                <a href="#" class="nav-item active">&#127968; Dashboard</a>
+                <a href="PAGES/dashboard.php" class="nav-item">&#128200; My Dashboard</a>
+                <a href="PAGES/profile.php" class="nav-item">&#128100; Profile</a>
+                <a href="PAGES/EVENT.HTML" class="nav-item">&#128197; Events</a>
+                <a href="PAGES/logout.php" class="nav-item">&#128275; Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="container">
+
+        <!-- Welcome message -->
+        <div style="text-align: center; padding: 30px 0 10px;">
+            <h1 style="font-size: 28px; color: #2c3e50;" data-welcome>Welcome to Student Hub Portal</h1>
+            <p style="color: #666;">Your comprehensive academic and personal development platform</p>
+            <p style="font-size:13px;color:#888">Your account details are available in your <a href="PAGES/dashboard.php">dashboard</a> and <a href="PAGES/profile.php">profile</a>. <a href="PAGES/register.php">Register</a> or <a href="PAGES/login.php">sign in</a>.</p>
+        </div>
+
+        <!-- QUICK ACCESS CARDS -->
+        <!-- Each card links to a different section of the portal -->
+        <h2 class="section-title">Quick Access</h2>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <div class="card-icon">&#128218;</div>
+                <h3>My Courses</h3>
+                <p>Access all your enrolled courses and materials</p>
+                <a href="PAGES/dashboard.php" class="card-btn">View Courses</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#128197;</div>
+                <h3>Events &amp; Activities</h3>
+                <p>Discover upcoming events and club activities</p>
+                <a href="PAGES/EVENT.HTML" class="card-btn">Browse Events</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#128200;</div>
+                <h3>Academic Performance</h3>
+                <p>Track your grades and academic progress</p>
+                <a href="PAGES/dashboard.php" class="card-btn">View Progress</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#128100;</div>
+                <h3>My Profile</h3>
+                <p>Manage your personal and academic information</p>
+                <a href="PAGES/profile.php" class="card-btn">My Profile</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#128140;</div>
+                <h3>Messages</h3>
+                <p>Connect with instructors and classmates</p>
+                <a href="PAGES/CONTACT.HTML" class="card-btn">View Messages</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#10067;</div>
+                <h3>Help &amp; Support</h3>
+                <p>Find answers to common questions</p>
+                <a href="PAGES/FAQ.HTML" class="card-btn">Get Help</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">&#123;&#125;</div>
+                <h3>JSON Data Explorer</h3>
+                <p>Search, filter and browse live events, student profiles and FAQs</p>
+                <a href="PAGES/DATA-EXPLORER.HTML" class="card-btn">Open Explorer</a>
+            </div>
+
+        </div>
+
+        <!-- QUICK UPDATES SECTION -->
+        <!-- Shows pending assignments, events, and achievements -->
+        <h2 class="section-title">Quick Updates</h2>
+
+        <div class="card-grid">
+
+            <!-- Assignment update card -->
+            <div class="card">
+                <span class="badge badge-warning">Assignment</span>
+                <h3 style="margin-top: 10px;">Data Structures - Assignment 3</h3>
+                <p>Due in 5 days</p>
+                <!-- Progress bar showing 60% completion -->
+                <div class="progress-bar" style="margin-top: 10px;">
+                    <div class="progress-fill" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <!-- Event update card -->
+            <div class="card">
+                <span class="badge badge-success">Event</span>
+                <h3 style="margin-top: 10px;">Tech Seminar - AI in Education</h3>
+                <p>Tomorrow at 2:00 PM</p>
+                <a href="PAGES/EVENT.HTML" class="card-btn" style="margin-top: 10px;">Register</a>
+            </div>
+
+            <!-- Achievement update card -->
+            <div class="card">
+                <span class="badge badge-success">Achievement</span>
+                <h3 style="margin-top: 10px;">Achieved 90% in DBM Course</h3>
+                <p>Certificate earned</p>
+                <a href="PAGES/dashboard.php" class="card-btn" style="margin-top: 10px;">View Certificate</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="PAGES/ABOUT.HTML">About</a></li>
+                    <li><a href="PAGES/CONTACT.HTML">Contact</a></li>
+                    <li><a href="PAGES/FAQ.HTML">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <p>Email: support@studenthub.edu</p>
+                <p>Phone: +91-XXX-XXX-XXXX</p>
+            </div>
+            <div class="footer-col">
+                <p>&copy; 2026 Student Hub Portal. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILE -->
+    <script src="JS/auth.js"></script>
+    <script src="JS/SCRIPT.JS"></script>
+
+</body>
+</html>

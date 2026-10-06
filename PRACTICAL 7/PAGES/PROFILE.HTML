@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Student Hub - Student Profile</title>
+    <link rel="stylesheet" href="../CSS/PROFILE.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/INTERACTIVE.CSS">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Advanced Student Hub</span>
+            </div>
+            <div class="nav-menu">
+                <a href="../HOME.HTML" class="nav-item">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+                <a href="DASHBOARD.HTML" class="nav-item">
+                    <i class="fas fa-chart-line"></i> Analytics
+                </a>
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+                <a href="EVENT.HTML" class="nav-item">
+                    <i class="fas fa-calendar"></i> Events
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <div class="profile-cover"></div>
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="profile-details">
+                    <h1 data-user="fullname">Your Name</h1>
+                    <p class="role">Student | <span data-user="course">Your Branch</span></p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-number">8.2</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">92%</span>
+                            <span class="stat-label">Attendance</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">A+</span>
+                            <span class="stat-label">Grade</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="edit-profile-btn">
+                    <i class="fas fa-edit"></i> Edit Profile
+                </button>
+            </div>
+        </div>
+
+        <!-- Profile Content -->
+        <div class="profile-content">
+            <!-- Personal Information -->
+            <div class="profile-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-id-card"></i> Personal Information</h2>
+                </div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Full Name</label>
+                        <p data-user="fullname">Your Name</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Student ID</label>
+                        <p data-user="studentid">—</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Date of Birth</label>
+                        <p data-user="dob">—</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Gender</label>
+                        <p data-user="gender">—</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="profile-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-envelope"></i> Contact Information</h2>
+                </div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Email Address</label>
+                        <p data-user="email">you@example.com</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Phone Number</label>
+                        <p data-user="phone">—</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Course / Branch</label>
+                        <p data-user="course">Your Branch</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Enrollment Year</label>
+                        <p data-user="year">—</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Actions -->
+            <div class="profile-actions">
+                <a href="#" class="action-link">
+                    <i class="fas fa-key"></i> Change Password
+                </a>
+                <a href="#" class="action-link">
+                    <i class="fas fa-file-download"></i> Download Transcript
+                </a>
+                <a href="DASHBOARD.HTML" class="action-link">
+                    <i class="fas fa-chart-bar"></i> View Analytics
+                </a>
+                <a href="../HOME.HTML" class="action-link home-link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Advanced Student Hub Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../JS/auth.js"></script>
+    <script src="../JS/SCRIPT.JS"></script>
+</body>
+</html>
